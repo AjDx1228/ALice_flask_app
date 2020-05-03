@@ -42,7 +42,7 @@ def handle_dialog(req, res):
             ]
         }
 
-        res['response']['text'] = 'Привет! Купи слона!'
+        res['response']['text'] = 'Привет! Купи Тёме слона!'
         res['response']['buttons'] = get_suggests(user_id)
         return
 
@@ -50,7 +50,9 @@ def handle_dialog(req, res):
         'ладно',
         'куплю',
         'покупаю',
-        'хорошо'
+        'хорошо', 
+        'Я покупаю',
+        'Я куплю'
     ]:
 
         res['response']['text'] = 'Слона можно найти на Яндекс.Маркете!'
