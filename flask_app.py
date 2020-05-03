@@ -48,11 +48,9 @@ def handle_dialog(req, res):
 
     if req['request']['original_utterance'].lower() in [
         'ладно',
-        'куплю',
-        'покупаю',
-        'хорошо',
         'Я куплю',
-        'Я покупаю'
+        'Я покупаю',
+        'хорошо'
     ]:
 
         res['response']['text'] = 'Слона можно найти на Яндекс.Маркете!'
