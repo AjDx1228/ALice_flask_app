@@ -48,8 +48,8 @@ def handle_dialog(req, res):
 
     if req['request']['original_utterance'].lower() in [
         'ладно',
-        'Я куплю',
-        'Я покупаю',
+        'я куплю',
+        'я покупаю',
         'хорошо'
     ]:
 
